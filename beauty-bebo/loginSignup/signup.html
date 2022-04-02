@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="styleSheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <title>Signup Page</title>
+</head>
+<style>
+    * {
+        font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #container {
+        height: 500px;
+        width: 90%;
+        margin-left: 30px;
+        align-items: center;
+    }
+
+    .register {
+        border: 2px solid white;
+        width: 40%;
+        height: 500px;
+        background-color: whitesmoke;
+        margin: 25p
+    }
+
+    #social {
+        width: 40%;
+        height: 60px;
+        margin: 30px;
+        margin-left: 70px
+    }
+
+    p {
+        margin-left: 40px;
+        margin-bottom: 2px;
+        margin-top: 36px;
+    }
+
+    .details {
+        height: 400px;
+        width: 100%;
+        margin-bottom: 1px;
+        box-sizing: border-box;
+    }
+
+    b {
+        color: rgb(235, 72, 127);
+        margin-right: 170px;
+        margin-left: 0px;
+    }
+
+    .name {
+        height: 130px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: -60px;
+    }
+
+    .name>input {
+        height: 25px;
+        width: 41%;
+    }
+
+    .name>h3 {
+        margin-left: 40px;
+        margin-bottom: 1px
+    }
+
+    hr {
+        width: 90%;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    #createacc {
+        height: 37px;
+        width: 200px;
+        background-color: black;
+        color: white;
+        margin: 30px;
+        margin-left: -280px;
+        border: 1px solid black;
+        font-size: 13px;
+    }
+
+    #createacc:hover {
+        background-color: rgb(235, 72, 127);
+    }
+
+    input {
+        height: 30px;
+        width: 90%;
+    }
+
+    h3 {
+        margin-left: -150px;
+        margin-bottom: 1px;
+        font-weight: 500;
+        font-size: 14px;
+        color: rgb(102, 105, 111);
+    }
+
+    h5 {
+        margin-left: 150px;
+        margin-top: -15px;
+        font-size: 14px;
+        color: rgb(102, 105, 111);
+    }
+
+    h5:hover {
+        color: rgb(235, 72, 127);
+    }
+
+    h1 {
+        margin-left: 40px;
+        font-weight: lighter;
+    }
+
+    button {
+        align-items: center;
+        border-radius: 6px;
+    }
+
+    .facebook {
+        width: 39%;
+        height: 30px;
+        margin: 8px;
+        font-size: 17px;
+        color: white;
+        box-sizing: border-box;
+        background-color: rgb(59, 89, 152);
+    }
+
+    .facebook:hover {
+        background-color: blue;
+    }
+
+    .google {
+        width: 39%;
+        height: 30px;
+        margin: 8px;
+        color: white;
+        margin-right: 50px;
+        box-sizing: border-box;
+        font-size: 17px;
+        background-color: rgb(240, 100, 25);
+    }
+
+    .fa {
+        font-size: 25px;
+        margin-left: 1px;
+    }
+
+    .google>img {
+        width: 23px;
+        height: 23px;
+        margin-left: 1px;
+        margin-right: 6px
+    }
+
+    .google:hover {
+        background-color: rgb(248, 175, 135);
+    }
+
+    #newsletter {
+        margin-left: -250px;
+        align-items: left;
+        width: 15px;
+    }
+
+    label {
+        margin-left: 0px;
+        padding-left: -20px;
+        font-size: 14px;
+        color: rgb(102, 105, 111);
+    }
+    #checkbox{
+
+        margin-left: 50px;
+    }
+</style>
+
+<body>
+    <center>
+        <h1> Customer Signup</h1>
+        <form id="signupForm" >
+            <div id="social"><button class="facebook"><i class='fa fa-facebook-official'
+                        style="color: white; ;width :40px;"></i>Sign in with Facebook</button>
+                            <button class="google"><img
+                        src="https://www.bing.com/th?id=OIP.bUazsv7bC2pTq1nFHvqg4AHaD4&w=188&h=170&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2"></i>Sign
+                    in with Google</button>
+                <h6>--OR--</h6>
+            </div>
+            </div>
+
+            <div id="container">
+
+                <div class="register">
+                    <p>PERSONAL INFORMATION</p>
+                    <hr>
+                    <div class="name">
+                        <h3 style="margin-left: 30px">First Name<b></b> Last Name<b></b></h3>
+                        <input type="text" id="name" >
+                        <input type="text" id="surname"  ><br>
+                        <input type="checkbox" id="newsletter" name="Sign Up for Newsletter" value="true">
+                        <label for="newsletter"> Sign Up for Newsletter</label><br>
+                    </div>
+                    <div class="details">
+                        <h3 style="margin-right: 50px">Email<b>*</b></h3>
+                        <input type="email" id="email"><br>
+                        <h3 style="margin-right: 40px">Phone<b>*</b></h3>
+                        <input type="number" id="phone"><br>
+                        <h3 style="margin-right: 20px">Password<b>*</b></h3>
+                        <input type="password" id="pass"><br>
+                        <h3 style="margin-right: -30px">Confirm Password<b>*</b></h3>
+                        <input type="password" id="repass"><br>
+                        <input id="createacc" style="margin-right: -60px;" type="submit" value="CREATE AN ACCOUNT" />
+                    </div>
+
+
+                </div>
+        </form>
+    </center>
+</body>
+<script src="./signup.js"></script>
+
+</html>

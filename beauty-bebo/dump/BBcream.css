@@ -1,0 +1,160 @@
+#parent{
+    display: flex;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+#child{
+    width: 75%;
+    padding: 12px;
+    
+}
+
+
+#container2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: auto;
+   
+    /* margin-left: 25%; */
+    /* gap: 20px; */
+    text-align: center;
+    background-color: white;
+    
+}
+
+#outline{
+    border: 1px solid #dddddd;
+    border-right: 0px;
+}
+#fdivi{
+    width: 220px;
+    height: 19px;
+    margin-left: 20px;
+    font-weight: bold
+    
+}
+#div1{
+    width: auto;
+    height: 265px;
+    /* border: 1px solid blue; */
+    margin-left: 15px;
+    position: relative;
+    
+}
+#div2{
+    width: auto;
+    height: 180px;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #dddddd;
+    
+}
+#divi{
+    width: auto;
+    border-right: 1px solid #dddddd;
+    margin-top: 10px;
+
+}
+
+h3,h4{
+    margin-top: 0px;
+    font-weight: bolder;
+}
+button{
+    width: 120px;
+    height: 30px;
+    background-color: #dd0285;
+    border: 0px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-top: 25px;
+
+}
+#container1{
+    width: 23%;
+    margin-left: 20px;
+    margin-right: 12px;
+    
+}
+
+#left>div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cccccc;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+}
+#left>div>h4{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+#left>div>h5{
+    margin: 10px;
+    color: #798588;
+    
+}
+s{
+    font-size: 12px;
+    color: #656668;
+}
+#left{
+    margin-bottom: 25px;
+    background-color: white;
+}
+#btn2{
+    width: 30px;
+    height: 30px;
+    background-color: #666666;
+    margin-left: 5px;
+    
+}
+#child{
+    background-color: white;
+}
+
+#child>div>div>h4{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
+}
+#child>div>div:nth-child(2){
+    width: 200px;
+    height: 40px;
+    padding: 0px 15px;
+    background-color: whitesmoke;
+    border-radius: 2px;
+    
+}
+select{
+    width: 200px;
+    height: 40px;
+    border: 0px;
+    background-color: whitesmoke;
+}
+hr{
+    height: 0px;
+}
+
+#sale{
+    position: absolute; top: 5%; right: 10%;
+    width: 40px;
+    height: 28px;
+    background-color: #dd0285;
+    color: white;
+    border-radius: 50%;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 12px;
+    font-size: 12px;
+    font-weight: bolder;
+    
+}

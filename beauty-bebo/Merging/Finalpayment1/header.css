@@ -1,0 +1,267 @@
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+/*  Header*/
+        #header{
+            
+            width:1279px;
+            height:92px;
+            display: flex;
+            justify-content: space-around;
+        
+        }
+        #logoLeft{
+            /* border: 2px solid blue; */
+            margin-top: 20px;
+        }
+        #headerMiddle{
+            
+            display: flex;
+            justify-content: space-around;
+            width:650px;
+            height:40px;
+            border:1px solid gray;
+            margin-top: 25px;
+
+         }
+        #headerRight{
+            width:200px;
+            height:50px;
+            /* border:2px solid blue; */
+            margin-top: 25px
+           
+            }
+            #searchPipe{
+                margin-top:10px;
+            }
+           
+            #SearchBar{
+                width:320px;
+                height:90%;
+               border: none;
+            
+               margin-left: 10px;
+            }
+            
+
+            #selectionCategory
+            {
+                width:250px;
+                height:100%;
+                border:none;
+                margin-right: 10px;
+                background-color: white;
+                color: gray;
+            }
+            #searchIcon{
+                width:40px;
+                font-weight: bold;
+                background-color:  #E05385; 
+                color:black;
+                padding-top:10px;
+                padding-left: 20px; 
+                color: white;
+                
+                 
+             } 
+              #headerRight
+                {
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+                .boxIcon{
+                    width:25px;
+                    height:25px;
+                    border:1px solid gray;
+                    padding-top: 7px;
+                    padding-left: 9px;
+                    border-radius: 2px;
+                    
+                   
+                }
+
+                .boxIcon:hover{
+                    background-color: #dd0285;
+                    color: white;
+                }
+                #selectLogin
+                {
+                   width: 200px;
+                    height:45px ;
+                    border:none;
+                    background-color: white;
+                    color: black;
+                    
+                }
+
+             /* Navigation Barr */
+                
+    
+        
+             * {
+                
+                margin: 0px;
+            }
+
+            #parent {
+                display: flex;
+                background-color: #dd0285;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                height: 50px;
+                justify-content: space-between;
+              
+                width: 100%;
+            }
+
+            .names {
+                width: 80%;
+                display: flex;
+                justify-content: space-evenly;
+
+
+            }
+
+            .names>div {
+                font-size: 14px;
+                color: white;
+                font-weight: bolder;
+                padding: 5px;
+                /* margin-top: 10px; */
+
+            }
+
+            .names>div>div {
+                margin-top: 10px;
+            }
+
+            .makeup1>div:first-child,
+            .skin1>div:first-child,
+            .hair1>div:first-child,
+            .personalcare1>div:first-child,
+            .mombaby1>div:first-child,
+            .fragrance1>div:first-child,
+            .ayurveda1>div:first-child,
+            .brands1>div:first-child {
+                display: flex;
+            }
+            /* .makeup{
+                position: relative
+            } */
+
+            .displaydata {
+                /* border: 1px solid red; */
+                top: 25%;
+                left: 1%;
+                /* left: -235px; */
+                width: 90%;
+                display: none;
+                z-index: 0;
+                background-color: white;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+            }
+         
+            .displaydata>div {
+                padding: 20px;
+                line-height: 25px;
+                font-size: 12px;
+                background-color: white;
+            }
+
+            li {
+                list-style: none;
+                margin-left: -40px;
+               
+
+            }
+
+            a {
+                text-decoration: none;
+                color: #666666
+            }
+
+            .names>div:hover {
+                background-color: #c60277;
+                cursor: pointer;
+            }
+
+            .names>div:hover select {
+                background-color: #c60277;
+                cursor: pointer;
+            }
+
+            .makeup1:hover .displaydata,
+            .skin1:hover .displaydata,
+            .hair1:hover .displaydata,
+            .personalcare1:hover .displaydata,
+            .mombaby1:hover .displaydata,
+            .fragrance1:hover .displaydata,
+            .ayurveda1:hover .displaydata,
+            .brands1:hover .displaydata {
+                display: flex;
+                flex-wrap: nowrap;
+                position: absolute;
+            }
+
+            /* .displaydata>div:hover .displaydata {
+                display: flex;
+            } */
+            /* .displaydata:hover .displaydata {
+                display: flex;
+            } */
+            /* .displaydata>div:hover .displaydata {
+                display: flex;
+            } */
+            /* .displaydata img:hover .displaydata {
+                display: flex;
+            } */
+
+
+            .displaydata>div{
+                background-color: white;
+            }
+
+            select {
+                border: 0px;
+                background-color: #dd0285;
+                height: 20px;
+                color: white;
+            }
+
+            .cart {
+                width: 15%;
+                background-color: #c60277;
+                margin-right: 25px;
+            }
+
+            .cart>div {
+                display: flex;
+                margin-left: 30px;
+                margin-top: 15px;
+                color: white;
+                font-size: 14px;
+                font-weight: bolder;
+                cursor: pointer;
+            }
+
+            p {
+                margin-right: 10px;
+            }
+
+            .displaydata>div>a {
+                color: black;
+                font-family: 'Roboto', sans-serif;
+                /* font-weight: bolder; */
+            }
+
+            ul {
+                width: 100px;
+            }
+
+            .displaydata li>a:hover{
+                color: #dd0285;
+            }
+
+           

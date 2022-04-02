@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .first-section {
+                display: flex;
+                border: 1px solid gray;
+                width: 90%;
+                justify-content: space-between;
+                height: 400px;
+                margin-left: 5%;
+            }
+
+            .first-section>div {
+                border: 1px solid pink;
+            }
+
+            .sidebar {
+                width: 30%;
+            }
+
+            .slider-images {
+                width: 65%;
+            }
+
+            .allcat {
+                display: flex;
+                height: 34px;
+                border: 1px solid orange;
+                z-index: -1;
+            }
+
+            .allcatimag>img {
+                width: 50px;
+                height: 30px;
+            }
+
+            .allcat>div>h4 {
+                margin-top: 3px;
+            }
+
+            h5 {
+                color: grey;
+                margin-top: 5px;
+                margin-left: 8px;
+            }
+
+            .sublist {
+                display: flex;
+            }
+
+            .catimg>img {
+                width: 25px;
+                height: 25px;
+                margin-left: 9px;
+            }
+
+            .displaydata {
+                width: 0px;
+                display: none;
+                z-index: 1;
+                background-color: rgb(245, 239, 239);
+                border: 1px solid whitesmoke;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+
+
+            }
+
+            .displaydata>div {
+                width: auto;
+                padding-right: 20px;
+                line-height: 25px;
+                font-size: 12px;
+                font-weight: bolder;
+                padding-left: 20px;
+                padding-top: 20px;
+
+            }
+
+            li {
+                list-style: none;
+                margin-left: -40px;
+
+
+            }
+
+            li>a:hover {
+                color: palevioletred;
+            }
+
+            a {
+                text-decoration: none;
+                color: #666666
+            }
+
+            /* .displaydata{
+            display:none;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        } */
+            .makeup:hover .displaydata,
+            .skin:hover .displaydata,
+            .hair:hover .displaydata,
+            .personalcare:hover .displaydata,
+            .mombaby:hover .displaydata {
+                display: flex;
+            }
+
+            .displaydata>div:hover .displaydata {
+                display: flex;
+            }
+
+            .slider-images {
+                width: 100%;
+                border: 1px solid green;
+            }
+
+            #slide {
+                position: relative;
+                height: 100%;
+                width: 100%;
+                margin-left: 0px;
+            }
+
+            #slide>img {
+                width: auto;
+                height: 90%;
+                margin: auto;
+            }
+
+            #slide img {
+                position: absolute;
+                left: 0;
+                -webkit-transition: opacity 1s ease-in-out;
+                -moz-transition: opacity 1s ease-in-out;
+                -o-transition: opacity 1s ease-in-out;
+                transition: opacity 1s ease-in-out;
+            }
+
+            #slide img.bottom:hover {
+                opacity: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="first-section">
+            <div class="sidebar">
+                <div class="list">
+                    <div class="allcat">
+                        <div class="allcatimag"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxv6zlh3J2oiz6MS_w49nmylNU9r-iXAEFyURq89a5RY3KDgHtnNWxDlYjzTIvunf11rI&usqp=CAU"
+                                alt="bullets"></div>
+                        <div>
+                            <h4>All Categories</h4>
+                        </div>
+                    </div>
+                    <div class="sublist">
+                        <div class="catimg"> <img
+                                src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/makeup-small.png">
+                        </div>
+                        <div class="makeup">
+                            <h5>Makeup</h5>
+                            <div class="displaydata">
+                                <div>
+                                    <a href="">FACE</a>
+                                    <ul>
+                                        <li><a href="">BB Cream</a></li>
+                                        <li><a href="">Blush</a></li>
+                                        <li><a href="">Bronzer</a></li>
+                                        <li><a href="">Contour</a></li>
+                                        <li><a href="">Concealer</a></li>
+                                        <li><a href="">Compact & Powder</a></li>
+                                        <li><a href="">Face Primer</a></li>
+                                        <li><a href="">Foundation</a></li>
+                                        <li><a href="">Highlighters</a></li>
+                                        <li><a href="">Loose Powder</a></li>
+                                        <li><a href="">Makeup Kits</a></li>
+                                        <li><a href="">Makeup Remover</a></li>
+                                        <li><a href="">Setting Spray</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="">EYE</a>
+                                    <ul>
+                                        <li><a href="">Contact Lenses</a></li>
+                                        <li><a href="">Eye Kit</a></li>
+                                        <li><a href="">Eyeliner</a></li>
+                                        <li><a href="">Eye Shadow</a></li>
+                                        <li><a href="">Eye Primer</a></li>
+                                        <li><a href="">Eye-Palettes</a></li>
+                                        <li><a href="">Eye Makeup Remover</a></li>
+                                        <li><a href="">Eye Brow Enhancers</a></li>
+                                        <li><a href="">False Eyelashes</a></li>
+                                        <li><a href="">Kajal</a></li>
+                                        <li><a href="">Mascara</a></li>
+                                        <li><a href="">Under Eye Concealer</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="">LIPS</a>
+                                    <ul>
+                                        <li><a href="">Lipstick</a></li>
+                                        <li><a href="">Liquid Lipstick</a></li>
+                                        <li><a href="">Lip Liner</a></li>
+                                        <li><a href="">Lip Gloss</a></li>
+                                        <li><a href="">Lip Balm</a></li>
+                                        <li><a href="">Lip Crayon</a></li>
+                                        <li><a href="">Lip Stain</a></li>
+                                        <li><a href="">Lip Plumper</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="">NAILS</a>
+                                    <ul>
+                                        <li><a href="">Manicure & Pedicure Kits</a></li>
+                                        <li><a href="">Nail Polish</a></li>
+                                        <li><a href="">Nail Care</a></li>
+                                        <li><a href="">Nail Polish Sets</a></li>
+                                        <li><a href="">Nail Art Kits</a></li>
+                                        <li><a href="">Nail Polish Remover</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="">TOOLS BRUSHES</a>
+                                    <ul>
+                                        <li><a href="">Blush Brush</a></li>
+                                        <li><a href="">Eyelash Curlers</a></li>
+                                        <li><a href="">Eye Brush</a></li>
+                                        <li><a href="">Face Brush</a></li>
+                                        <li><a href="">Lip Brush</a></li>
+                                        <li><a href="">Makeup Pouches</a></li>
+                                        <li><a href="">Mirrors</a></li>
+                                        <li><a href="">Sponges & Applicators</a></li>
+                                        <li><a href="">Sharpeners</a></li>
+                                        <li><a href="">Tweezers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sublist">
+                        <div class="catimg"> <img
+                                src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/skin-small.png">
+                        </div>
+                        <div class="skin">
+                            <h5>Skin</h5>
+                            <div class="displaydata">
+                                <div>
+                                    <a href="">EYE CARE</a>
+                                    <ul>
+                                        <li><a href="">Dark Circles</a></li>
+                                        <li><a href="">Eye Contour Care</a></li>
+                                        <li><a href="">Eye Cream</a></li>
+                                        <li><a href="">Eye Masks</a></li>
+                                        <li><a href="">Eye Serums</a></li>
+                                        <li><a href="">Puffiness</a></li>
+                                        <li><a href="">Under Eye Creams</a></li>
+                                        <li><a href="">Under Eye Wrinkles</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="">FACE CARE</a>
+                                    <ul>
+                                        <li><a href="">Contact Lenses</a></li>
+                                        <li><a href="">Eye Kit</a></li>
+                                        <li><a href="">Eyeliner</a></li>
+                                        <li><a href="">Eye Shadow</a></li>
+                                        <li><a href="">Eye Primer</a></li>
+                                        <li><a href="">Eye-Palettes</a></li>
+                                        <li><a href="">Eye Makeup Remover</a></li>
+                                        <li><a href="">Eye Brow Enhancers</a></li>
+                                        <li><a href="">False Eyelashes</a></li>
+                                        <li><a href="">Kajal</a></li>
+                                        <li><a href="">Mascara</a></li>
+                                        <li><a href="">Under Eye Concealer</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="">LIPS</a>
+                                    <ul>
+                                        <li><a href="">Lipstick</a></li>
+                                        <li><a href="">Liquid Lipstick</a></li>
+                                        <li><a href="">Lip Liner</a></li>
+                                        <li><a href="">Lip Gloss</a></li>
+                                        <li><a href="">Lip Balm</a></li>
+                                        <li><a href="">Lip Crayon</a></li>
+                                        <li><a href="">Lip Stain</a></li>
+                                        <li><a href="">Lip Plumper</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="">NAILS</a>
+                                    <ul>
+                                        <li><a href="">Manicure & Pedicure Kits</a></li>
+                                        <li><a href="">Nail Polish</a></li>
+                                        <li><a href="">Nail Care</a></li>
+                                        <li><a href="">Nail Polish Sets</a></li>
+                                        <li><a href="">Nail Art Kits</a></li>
+                                        <li><a href="">Nail Polish Remover</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="">TOOLSBRUSHES</a>
+                                    <ul>
+                                        <li><a href="">Blush Brush</a></li>
+                                        <li><a href="">Eyelash Curlers</a></li>
+                                        <li><a href="">Eye Brush</a></li>
+                                        <li><a href="">Face Brush</a></li>
+                                        <li><a href="">Lip Brush</a></li>
+                                        <li><a href="">Makeup Pouches</a></li>
+                                        <li><a href="">Mirrors</a></li>
+                                        <li><a href="">Sponges & Applicators</a></li>
+                                        <li><a href="">Sharpeners</a></li>
+                                        <li><a href="">Tweezers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sublist">
+                        <div class="catimg"> <img
+                                src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/hair-small.png">
+                        </div>
+                        <div class="hair">
+                            <h5>Hair</h5>
+                            <div class="displaydata">
+                                <div>
+                                    <a href="">FACE</a>
+                                    <ul>
+                                        <li><a href="">BB Cream</a></li>
+                                        <li><a href="">Blush</a></li>
+                                        <li><a href="">Bronzer</a></li>
+                                        <li><a href="">Contour</a></li>
+                                        <li><a href="">Concealer</a></li>
+                                        <li><a href="">Compact & Powder</a></li>
+                                        <li><a href="">Face Primer</a></li>
+                                        <li><a href="">Foundation</a></li>
+                                        <li><a href="">Highlighters</a></li>
+                                        <li><a href="">Loose Powder</a></li>
+                                        <li><a href="">Makeup Kits</a></li>
+                                        <li><a href="">Makeup Remover</a></li>
+                                        <li><a href="">Setting Spray</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="">EYE</a>
+                                    <ul>
+                                        <li><a href="">Contact Lenses</a></li>
+                                        <li><a href="">Eye Kit</a></li>
+                                        <li><a href="">Eyeliner</a></li>
+                                        <li><a href="">Eye Shadow</a></li>
+                                        <li><a href="">Eye Primer</a></li>
+                                        <li><a href="">Eye-Palettes</a></li>
+                                        <li><a href="">Eye Makeup Remover</a></li>
+                                        <li><a href="">Eye Brow Enhancers</a></li>
+                                        <li><a href="">False Eyelashes</a></li>
+                                        <li><a href="">Kajal</a></li>
+                                        <li><a href="">Mascara</a></li>
+                                        <li><a href="">Under Eye Concealer</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="">LIPS</a>
+                                    <ul>
+                                        <li><a href="">Lipstick</a></li>
+                                        <li><a href="">Liquid Lipstick</a></li>
+                                        <li><a href="">Lip Liner</a></li>
+                                        <li><a href="">Lip Gloss</a></li>
+                                        <li><a href="">Lip Balm</a></li>
+                                        <li><a href="">Lip Crayon</a></li>
+                                        <li><a href="">Lip Stain</a></li>
+                                        <li><a href="">Lip Plumper</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="">NAILS</a>
+                                    <ul>
+                                        <li><a href="">Manicure & Pedicure Kits</a></li>
+                                        <li><a href="">Nail Polish</a></li>
+                                        <li><a href="">Nail Care</a></li>
+                                        <li><a href="">Nail Polish Sets</a></li>
+                                        <li><a href="">Nail Art Kits</a></li>
+                                        <li><a href="">Nail Polish Remover</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="">TOOLSBRUSHES</a>
+                                    <ul>
+                                        <li><a href="">Blush Brush</a></li>
+                                        <li><a href="">Eyelash Curlers</a></li>
+                                        <li><a href="">Eye Brush</a></li>
+                                        <li><a href="">Face Brush</a></li>
+                                        <li><a href="">Lip Brush</a></li>
+                                        <li><a href="">Makeup Pouches</a></li>
+                                        <li><a href="">Mirrors</a></li>
+                                        <li><a href="">Sponges & Applicators</a></li>
+                                        <li><a href="">Sharpeners</a></li>
+                                        <li><a href="">Tweezers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sublist">
+                        <div class="catimg"> <img
+                                src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/personal-care-small.png">
+                        </div>
+                        <div class="personalcare">
+                            <h5>Personal Care</h5>
+                            <div class="displaydata">
+                                <div>
+                                    <a href="">FACE</a>
+                                    <ul>
+                                        <li><a href="">BB Cream</a></li>
+                                        <li><a href="">Blush</a></li>
+                                        <li><a href="">Bronzer</a></li>
+                                        <li><a href="">Contour</a></li>
+                                        <li><a href="">Concealer</a></li>
+                                        <li><a href="">Compact & Powder</a></li>
+                                        <li><a href="">Face Primer</a></li>
+                                        <li><a href="">Foundation</a></li>
+                                        <li><a href="">Highlighters</a></li>
+                                        <li><a href="">Loose Powder</a></li>
+                                        <li><a href="">Makeup Kits</a></li>
+                                        <li><a href="">Makeup Remover</a></li>
+                                        <li><a href="">Setting Spray</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="">EYE</a>
+                                    <ul>
+                                        <li><a href="">Contact Lenses</a></li>
+                                        <li><a href="">Eye Kit</a></li>
+                                        <li><a href="">Eyeliner</a></li>
+                                        <li><a href="">Eye Shadow</a></li>
+                                        <li><a href="">Eye Primer</a></li>
+                                        <li><a href="">Eye-Palettes</a></li>
+                                        <li><a href="">Eye Makeup Remover</a></li>
+                                        <li><a href="">Eye Brow Enhancers</a></li>
+                                        <li><a href="">False Eyelashes</a></li>
+                                        <li><a href="">Kajal</a></li>
+                                        <li><a href="">Mascara</a></li>
+                                        <li><a href="">Under Eye Concealer</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="">LIPS</a>
+                                    <ul>
+                                        <li><a href="">Lipstick</a></li>
+                                        <li><a href="">Liquid Lipstick</a></li>
+                                        <li><a href="">Lip Liner</a></li>
+                                        <li><a href="">Lip Gloss</a></li>
+                                        <li><a href="">Lip Balm</a></li>
+                                        <li><a href="">Lip Crayon</a></li>
+                                        <li><a href="">Lip Stain</a></li>
+                                        <li><a href="">Lip Plumper</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="">NAILS</a>
+                                    <ul>
+                                        <li><a href="">Manicure & Pedicure Kits</a></li>
+                                        <li><a href="">Nail Polish</a></li>
+                                        <li><a href="">Nail Care</a></li>
+                                        <li><a href="">Nail Polish Sets</a></li>
+                                        <li><a href="">Nail Art Kits</a></li>
+                                        <li><a href="">Nail Polish Remover</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="">TOOLSBRUSHES</a>
+                                    <ul>
+                                        <li><a href="">Blush Brush</a></li>
+                                        <li><a href="">Eyelash Curlers</a></li>
+                                        <li><a href="">Eye Brush</a></li>
+                                        <li><a href="">Face Brush</a></li>
+                                        <li><a href="">Lip Brush</a></li>
+                                        <li><a href="">Makeup Pouches</a></li>
+                                        <li><a href="">Mirrors</a></li>
+                                        <li><a href="">Sponges & Applicators</a></li>
+                                        <li><a href="">Sharpeners</a></li>
+                                        <li><a href="">Tweezers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sublist">
+                        <div class="catimg"> <img
+                                src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/mom-baby-care-small.png">
+                        </div>
+                        <div class="mombaby">
+                            <h5>Mom & Baby Care</h5>
+                            <div class="displaydata">
+                                <div>
+                                    <a href="">FACE</a>
+                                    <ul>
+                                        <li><a href="">BB Cream</a></li>
+                                        <li><a href="">Blush</a></li>
+                                        <li><a href="">Bronzer</a></li>
+                                        <li><a href="">Contour</a></li>
+                                        <li><a href="">Concealer</a></li>
+                                        <li><a href="">Compact & Powder</a></li>
+                                        <li><a href="">Face Primer</a></li>
+                                        <li><a href="">Foundation</a></li>
+                                        <li><a href="">Highlighters</a></li>
+                                        <li><a href="">Loose Powder</a></li>
+                                        <li><a href="">Makeup Kits</a></li>
+                                        <li><a href="">Makeup Remover</a></li>
+                                        <li><a href="">Setting Spray</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="">EYE</a>
+                                    <ul>
+                                        <li><a href="">Contact Lenses</a></li>
+                                        <li><a href="">Eye Kit</a></li>
+                                        <li><a href="">Eyeliner</a></li>
+                                        <li><a href="">Eye Shadow</a></li>
+                                        <li><a href="">Eye Primer</a></li>
+                                        <li><a href="">Eye-Palettes</a></li>
+                                        <li><a href="">Eye Makeup Remover</a></li>
+                                        <li><a href="">Eye Brow Enhancers</a></li>
+                                        <li><a href="">False Eyelashes</a></li>
+                                        <li><a href="">Kajal</a></li>
+                                        <li><a href="">Mascara</a></li>
+                                        <li><a href="">Under Eye Concealer</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="">LIPS</a>
+                                    <ul>
+                                        <li><a href="">Lipstick</a></li>
+                                        <li><a href="">Liquid Lipstick</a></li>
+                                        <li><a href="">Lip Liner</a></li>
+                                        <li><a href="">Lip Gloss</a></li>
+                                        <li><a href="">Lip Balm</a></li>
+                                        <li><a href="">Lip Crayon</a></li>
+                                        <li><a href="">Lip Stain</a></li>
+                                        <li><a href="">Lip Plumper</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="">NAILS</a>
+                                    <ul>
+                                        <li><a href="">Manicure & Pedicure Kits</a></li>
+                                        <li><a href="">Nail Polish</a></li>
+                                        <li><a href="">Nail Care</a></li>
+                                        <li><a href="">Nail Polish Sets</a></li>
+                                        <li><a href="">Nail Art Kits</a></li>
+                                        <li><a href="">Nail Polish Remover</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="">TOOLSBRUSHES</a>
+                                    <ul>
+                                        <li><a href="">Blush Brush</a></li>
+                                        <li><a href="">Eyelash Curlers</a></li>
+                                        <li><a href="">Eye Brush</a></li>
+                                        <li><a href="">Face Brush</a></li>
+                                        <li><a href="">Lip Brush</a></li>
+                                        <li><a href="">Makeup Pouches</a></li>
+                                        <li><a href="">Mirrors</a></li>
+                                        <li><a href="">Sponges & Applicators</a></li>
+                                        <li><a href="">Sharpeners</a></li>
+                                        <li><a href="">Tweezers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sublist">
+                        <div class="catimg"> <img src="https://www.beautybebo.com/pub/media/fragrance.png">
+                        </div>
+                        <div class="fragances">
+                            <h5>Fragances</h5>
+                        </div>
+                    </div>
+                    <div class="sublist">
+                        <div class="catimg"> <img src="https://www.beautybebo.com/pub/media/ayurveda.png">
+                        </div>
+                        <div class="aryuveda">
+                            <h5>Aryuveda</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-images">
+                <div id="slide">
+                    <img class="bottom" src="https://www.beautybebo.com/pub/media/ads/Vega_new_year_banner.jpg" />
+                    <img class="top" src="https://www.beautybebo.com/pub/media/ads/imgpsh_fullsize_anim_16_.jpg" />
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

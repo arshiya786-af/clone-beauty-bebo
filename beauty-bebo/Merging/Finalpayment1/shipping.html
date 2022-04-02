@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shipping</title>
+
+        
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@100;300&display=swap"
+            rel="stylesheet">
+        <style type="text/css">
+            * {
+                color: rgb(114, 113, 113);
+                font-family: 'Roboto', sans-serif;
+            }
+
+            #shippingbox {
+                width: 95%;
+                margin: 0 auto;
+                display: flex;
+                /* border:1px solid black; */
+            }
+
+            #shippingbox>div {
+                width: 200px;
+                height: 100px;
+                /* border:1px solid rgb(196, 52, 76); */
+            }
+
+            h3 {
+                text-decoration: none;
+                font-weight: normal;
+
+            }
+
+            #payment {
+                opacity: 0.5;
+            }
+
+            #inputs {
+                width: 60%;
+                height: 800px;
+                margin-left: 32px;
+                /* border: 1px solid rgb(196, 52, 76); */
+            }
+
+            h2 {
+                color: rgb(104, 99, 99);
+                font-weight: bold;
+            }
+
+            h4+input {
+                width: 98%;
+                height: 25px;
+            }
+
+            h4+select {
+                width: 99%;
+                height: 33px;
+            }
+
+            form>h4 {
+                margin-bottom: 5px;
+            }
+
+            .delivery {
+                display: flex;
+                height: 40px;
+            }
+
+            .delivery>div:nth-child(1) {
+                width: 20px;
+                /* border:1px solid black; */
+                padding: 3px;
+            }
+
+            .delivery>div:nth-child(2) {
+                width: 120px;
+                /* border:1px solid black; */
+                padding: 5px;
+            }
+
+            .delivery>div:nth-child(3) {
+                width: 180px;
+                /* border:1px solid black; */
+                padding: 5px;
+            }
+
+            #next {
+                margin-left: 89%;
+                background-color: rgb(63, 61, 61);
+                color: white;
+                height: 30px;
+                width: 80px;
+            }
+
+            #next:hover {
+                background-color: rgb(196, 7, 101);
+            }
+
+            .bottom {
+                display: flex;
+            }
+
+            .ordersummary {
+                width: 35%;
+                
+                margin-left: 20px;
+              
+                padding-left: 10px;
+                /* border:1px solid rgb(55, 7, 167); */
+            }
+
+            #no,
+            #texts {
+                font-size: 20px;
+            }
+
+            .black {
+                color: rgb(58, 57, 57);
+                font-weight: bolder;
+            }
+
+            #itemDetails {
+                display: block;
+                background-color: snow;
+                height: auto;
+                /* border: 1px solid red; */
+            }
+
+            /* #itemDetails>div{
+            /* : border1px solid rgb(31, 160, 192) */
+            /* } */
+            #itemimage {
+                width: 100px;
+            }
+
+            #itemimage>img {
+                width: 80px;
+            }
+
+            #price {
+                margin-left: 30px;
+                padding-top: 15px;
+            }
+
+            #itemno {
+                border-top: 1px solid grey;
+                border-bottom: 1px solid grey;
+                margin-bottom: 20px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+
+            }
+
+
+            .cfinal{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <div id="page">
+            <div id="top">
+                <div id="shippingbox">
+                    <div id="shipping">
+                        <img src="">
+                        <h2>Shipping details</h2>
+                    </div>
+                    <!-- <div id="payment">
+                        <h3>Review&Payment</h3>
+                    </div> -->
+
+                </div>
+                <div class="bottom">
+                    <div id="inputs">
+                        <h2>Address</h2>
+                        <form id="form">
+                            <h4>First Name *</h4>
+                            <input type="text" id="first">
+                            <h4>Last Name *</h4>
+                            <input type="text" id="last">
+                            <h4>Street Address *</h4>
+                            <input type="text" id="streetaddress">
+                            <h4>City *</h4>
+                            <input type="text" id="city">
+                            <h4>State *</h4>
+                            <select id="state">
+                                <option value="Andman Nicobar island">Andman Nicobar island</option>
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chandigardh">Chandigardh</option>
+                                <option value="Dadar and Nagar Haweli">Dadar and Nagar Haweli</option>
+                                <option value="Daman and Diu">Daman and Diu</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujrat<">Gujrat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                <option value="Jarkhand">Jarkhand</option>
+                                <option value="Karnatak">Karnatak</option>
+                                <option value="Kerla">Kerla</option>
+                                <option value="Lakshdweep">Lakshdweep</option>
+                                <option value="Madhya pradesh">Madhya pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                            </select>
+                            <h4>Zip/Postal Code *</h4>
+                            <input type="number" id="zip">
+                            <h4>Country *</h4>
+                            <select id="country">
+                                <option value="india">India</option>
+                            </select>
+                            <h4>Phone Number *</h4>
+                            <input type="number" id="phone">
+                            <h2>Delivery Charges</h2>
+                            <div class="delivery">
+                                <div> <input type="radio"></div>
+                                <div>₹45.00</div>
+                                <div>Max 7 Business Days</div>
+                            </div>
+                            <input type="submit" id="next" value="Next">
+                        </form>
+                    </div>
+                    <div class="ordersummary">
+                        <div>
+                            <h2 class="black">Order Summary</h2>
+                        </div>
+                        <div id="itemno">
+                            <!-- <span id="no">1</span> <span id="texts">Item in Cart </span> -->
+                        </div>
+                        <div id="itemDetails">
+                            <!-- <div id="itemimage"><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/71b19e0ab136f3b596419e0e747fa5d1/5/b/5b990e16902395773146_3.jpg"></div>
+                <div class="product-description">
+                    <p id="product-name">Maybelline New York Fit Me</p>
+                    <p id="type">Primer-Dewy+Smooth</p>
+                    <p><b>Qty</b>:<b>1</b></p>
+                </div>
+                <div id="price">₹ 475.00</div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
+<script>
+
+
+    document.querySelector("#itemno").addEventListener("click", myFunction);
+    function myFunction() {
+        var x = document.getElementById("itemDetails");
+        if (x.style.display === "none") {
+            x.style.display = "flex";
+        }
+        else {
+            x.style.display = "none";
+        }
+    }
+
+    document.querySelector("#form").addEventListener("submit", details,{once:true});
+    var values = [];
+
+    function details(event) {
+        event.preventDefault();
+        var name = document.querySelector("#first").value;
+        var lastname = document.querySelector("#last").value;
+        var streetaddress = document.querySelector("#streetaddress").value;
+        var city = document.querySelector("#city").value;
+        var state = document.querySelector("#state").value;
+        var zip = document.querySelector("#zip").value;
+        var country = document.querySelector("#country").value;
+        var phone = document.querySelector("#phone").value;
+
+
+        var detailsObj = {
+            name: name,
+            lastname: lastname,
+            streetaddress: streetaddress,
+            city: city,
+            state: state,
+            zip: zip,
+            country: country,
+            phone: phone,
+
+        };
+        values.push(detailsObj);
+        console.log(values);
+        localStorage.setItem("addressDetails", JSON.stringify(values));
+        window.location.href = "/beauty-bebo/Merging/Finalpayment1/secondpage1.html"
+
+    }
+
+
+
+    var cartarr = JSON.parse(localStorage.getItem("cart")) || []
+
+        function displaydata(cartarr) {
+
+
+            cartarr.map(function (elem, index, arr) {
+
+                
+                var dpar = document.createElement("div")
+                var image = elem.image_url
+                console.log(image)
+                var img = document.createElement("img")
+                img.setAttribute("src", image)
+                img.style.width = "60%"
+                img.style.height = "80%"
+                var nam = document.createElement("div")
+                nam.setAttribute("class", "cname")
+                nam.innerText = elem.name
+
+                var prc = document.createElement("div")
+                prc.setAttribute("class", "cprice")
+                prc.innerText = elem.price
+
+                // var qtya = document.createElement("button")
+                // qtya.setAttribute("class", "cqty")
+                // qtya.innerHTML = "+"
+                var dqty = document.createElement("div")
+                dqty.innerHTML = "Qty" + " "+":"+ " " + elem.quantity
+                // var qtyr = document.createElement("button")
+                // qtyr.innerHTML = "-"
+                // qtyr.setAttribute("class", "cqty")
+
+                // qtya.addEventListener("click", function () {
+                //     incqty(elem)
+                // })
+
+                // qtyr.addEventListener("click", function () {
+                //     decqty(elem)
+                // })
+                // qty.append(opt1, opt2, opt3, opt4)
+                // qty.setAttribute("option","1")
+
+                var sttl = document.createElement("div")
+                sttl.innerText = "₹" + Number(elem.price) * Number(elem.quantity)
+                // console.log(qty.innerHTML.value)
+                // var btn = document.createElement("button")
+                // btn.innerText = "Remove Item"
+                // btn.style.marginLeft = "0px"
+                // btn.addEventListener("click", itemremove)
+
+
+                // function itemremove() {
+                //     // cartarr.pop(index)
+                //     removeitem(elem,index)
+                //     // console.log(cartarr)
+
+                //     // for (var i = 0; i < cartarr.length - 1; i++) {
+                //     //     if (cartarr[i] == elem.id) {
+                //     //         // cartarr.pop(cartarr[i])
+                //     //         console.log(cartarr[i])
+                //     //     }
+                //     // }
+                //     // displaydata()
+                // }
+                // var bdiv = document.createElement("div")
+                // bdiv.setAttribute("class", "cremove")
+                // bdiv.append(btn)
+                // var fdiv = document.createElement("div")
+
+                
+
+                // 
+
+
+
+                // fdiv.append(nam, prc, finaldiv, sttl)
+                // fdiv.setAttribute("class", "cnew")
+
+                dpar.append(img)
+                var fldiv = document.createElement("div")
+
+                fldiv.append(nam,dqty,sttl)
+                fldiv.style.marginLeft = "-10px"
+                fldiv.style.lineHeight = "35px"
+                
+
+                var finaldiv = document.createElement("div")
+                finaldiv.append(dpar,fldiv)
+                // fldiv.style.display = "flex"
+                // fldiv.style.borderBottom = "1px solid grey"
+                fldiv.style.fontWeight = "bolder"
+                finaldiv.setAttribute("class", "cfinal")
+
+                document.querySelector("#itemDetails").append(finaldiv)
+
+
+            })
+
+        }
+
+
+        displaydata(cartarr)
+
+
+
+
+
+        // document.querySelector("#form").addEventListener("submit",payment)
+
+        // function payment(){
+            
+        // }
+</script>

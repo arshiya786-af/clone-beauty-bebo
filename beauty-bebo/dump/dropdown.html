@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            #menu {
+                position: relative;
+                display: inline-block;
+                margin-left: 200px;
+                cursor: pointer;
+            }
+
+            .dropdown-menu {
+                display: none;
+                position: absolute;
+                min-width: 160px;
+                padding: 10px;
+                z-index: 1;
+                background-color: aliceblue;
+            }
+
+            #menu:hover .dropdown-menu {
+                display: flex;
+            }
+
+            /* #menubtn:hover .dropdown-menu{
+            display: block;
+        } */
+        </style>
+    </head>
+
+    <body>
+        <div id="menu">
+            <div id="menubtn">Menu</div>
+            <div class="dropdown-menu">
+                <div><a href="">home</a>
+                    <ul>
+                        <li>1</li>
+                        <li>1</li>
+                    </ul>
+                </div>
+                <div><a href="">home</a>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                    </ul>
+                </div>
+                <div><a href="">about</a>
+                    <ul>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </div>
+                <div><a href="">home</a>
+                    <ul>
+                        <li>5</li>
+                        <li>6</li>
+                    </ul>
+                </div>
+                <div><a href="">about</a>
+                    <ul>
+                        <li>7</li>
+                        <li>8</li>
+                    </ul>
+                </div>
+                <div><a href="">home</a>
+                    <ul>
+                        <li>9</li>
+                        <li>10</li>
+                    </ul>
+                </div>
+                <div><a href="">about</a>
+                    <ul>
+                        <li>11</li>
+                        <li>12</li>
+                    </ul>
+                </div>
+                <div><a href="">home</a>
+                    <ul>
+                        <li>13</li>
+                        <li>14</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

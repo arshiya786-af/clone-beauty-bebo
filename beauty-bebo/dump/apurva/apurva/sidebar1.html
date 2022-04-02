@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://kit.fontawesome.com/3075c3c5e4.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            #parent {
+                width: 1230px;
+                height: 440px;
+                margin: auto;
+                display: flex;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                margin-top: 20px;
+            }
+
+            .left {
+                width: 25%;
+                height: 100%;
+            }
+
+            .container1>div {
+                width: 75%;
+                margin: auto;
+                display: flex;
+                padding: 2px 15px;
+                margin-top: 10px;
+
+            }
+
+            .container1>div:hover .displaydata {
+                display: flex;
+                position: absolute;
+
+            }
+
+            .container1>div:hover {
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            }
+
+            .flex {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-left: 10px;
+                margin-top: 5px;
+            }
+
+            .container1>div:first-child h4 {
+                margin-left: 18px;
+            }
+
+            img {
+                margin-left: -5px;
+            }
+
+            .displaydata {
+
+                width: auto;
+                display: none;
+                height: 0px;
+                z-index: 1;
+                background-color: rgb(245, 239, 239);
+                margin-left: 250px;
+                margin-top: -20px;
+
+            }
+
+            /* .makeup:hover .displaydata,
+            .skin:hover .displaydata,
+            .hair:hover .displaydata,
+            .personalcare:hover .displaydata,
+            .mombaby:hover .displaydata {
+                display: flex;
+            } */
+
+            .displaydata>div {
+                width: auto;
+                padding-right: 20px;
+                line-height: 25px;
+                font-size: 12px;
+                font-weight: bolder;
+                padding-left: 20px;
+                padding-top: 20px;
+                height: 400px;
+                background-color: white;
+            }
+
+            li {
+                list-style: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: #666666
+            }
+
+            ul {
+                width: 100px;
+                font-weight: 400;
+            }
+
+            .flex>p {
+                font-size: 14px;
+            }
+
+
+            .slider-images {
+                width: 75%;
+                margin-top: 20px;
+            }
+
+            #slide {
+                position: relative;
+                height: 100%;
+                width: 100%;
+                margin-left: 0px;
+            }
+
+            #slide>img {
+                width: 100%;
+                height: 90%;
+                margin: auto;
+            }
+
+            #slide img {
+                position: absolute;
+                left: 0;
+                -webkit-transition: opacity 1s ease-in-out;
+                -moz-transition: opacity 1s ease-in-out;
+                -o-transition: opacity 1s ease-in-out;
+                transition: opacity 1s ease-in-out;
+            }
+
+            #slide img.top:hover {
+                opacity: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="parent">
+            <div class="left">
+                <div class="container1">
+                    <div>
+                        <div><i class="fa-solid fa-list"></i></div>
+                        <div>
+                            <h4>ALL CATEGORIES</h4>
+                        </div>
+                    </div>
+                    <div class="makeup">
+                        <div><img src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/skin-small.png"></div>
+                        <div class="flex">
+                            <p>Makeup</p>
+                            <p>></p>
+                        </div>
+                        <div class="displaydata">
+                            <div>
+                                <a href="">FACE</a>
+                                <ul>
+                                    <li><a href="">BB Cream</a></li>
+                                    <li><a href="">Blush</a></li>
+                                    <li><a href="">Bronzer</a></li>
+                                    <li><a href="">Contour</a></li>
+                                    <li><a href="">Concealer</a></li>
+                                    <li><a href="">Compact & Powder</a></li>
+                                    <li><a href="">Face Primer</a></li>
+                                    <li><a href="">Foundation</a></li>
+                                    <li><a href="">Highlighters</a></li>
+                                    <li><a href="">Loose Powder</a></li>
+                                    <li><a href="">Makeup Kits</a></li>
+                                    <li><a href="">Makeup Remover</a></li>
+                                    <li><a href="">Setting Spray</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="">EYE</a>
+                                <ul>
+                                    <li><a href="">Contact Lenses</a></li>
+                                    <li><a href="">Eye Kit</a></li>
+                                    <li><a href="">Eyeliner</a></li>
+                                    <li><a href="">Eye Shadow</a></li>
+                                    <li><a href="">Eye Primer</a></li>
+                                    <li><a href="">Eye-Palettes</a></li>
+                                    <li><a href="">Eye Makeup Remover</a></li>
+                                    <li><a href="">Eye Brow Enhancers</a></li>
+                                    <li><a href="">False Eyelashes</a></li>
+                                    <li><a href="">Kajal</a></li>
+                                    <li><a href="">Mascara</a></li>
+                                    <li><a href="">Under Eye Concealer</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="">LIPS</a>
+                                <ul>
+                                    <li><a href="">Lipstick</a></li>
+                                    <li><a href="">Liquid Lipstick</a></li>
+                                    <li><a href="">Lip Liner</a></li>
+                                    <li><a href="">Lip Gloss</a></li>
+                                    <li><a href="">Lip Balm</a></li>
+                                    <li><a href="">Lip Crayon</a></li>
+                                    <li><a href="">Lip Stain</a></li>
+                                    <li><a href="">Lip Plumper</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="">NAILS</a>
+                                <ul>
+                                    <li><a href="">Manicure & Pedicure Kits</a></li>
+                                    <li><a href="">Nail Polish</a></li>
+                                    <li><a href="">Nail Care</a></li>
+                                    <li><a href="">Nail Polish Sets</a></li>
+                                    <li><a href="">Nail Art Kits</a></li>
+                                    <li><a href="">Nail Polish Remover</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="">TOOLS BRUSHES</a>
+                                <ul>
+                                    <li><a href="">Blush Brush</a></li>
+                                    <li><a href="">Eyelash Curlers</a></li>
+                                    <li><a href="">Eye Brush</a></li>
+                                    <li><a href="">Face Brush</a></li>
+                                    <li><a href="">Lip Brush</a></li>
+                                    <li><a href="">Makeup Pouches</a></li>
+                                    <li><a href="">Mirrors</a></li>
+                                    <li><a href="">Sponges & Applicators</a></li>
+                                    <li><a href="">Sharpeners</a></li>
+                                    <li><a href="">Tweezers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skin">
+                        <div><img src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/skin-small.png"></div>
+                        <div class="flex">
+                            <p>Skin</p>
+                            <p>></p>
+                        </div>
+                        <div class="displaydata">
+                            <div>
+                                <a href="">BODY CARE</a>
+                                <ul>
+                                    <li><a href="">All Cream</a></li>
+                                    <li><a href="">Body Moisturizers</a></li>
+                                    <li><a href="">Body Toners</a></li>
+                                    <li><a href="">Body Sun Care</a></li>
+                                    <li><a href="">Brightening Lotion</a></li>
+                                    <li><a href="">Dark Circles & Wrinkles</a></li>
+                                    <li><a href="">Day Cream</a></li>
+                                    <li><a href="">Foot Cream</a></li>
+                                    <li><a href="">Hair Remover Cream</a></li>
+                                    <li><a href="">Hand Creams</a></li>
+                                    <li><a href="">Hands & Feet</a></li>
+                                    <li><a href="">Kits & Combos</a></li>
+                                    <li><a href="">Night Cream</a></li>
+                                    <li><a href="">Neck Creams</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="">FACE CARE</a>
+                                <ul>
+                                    <li><a href="">Anti- Ageing Creams</a></li>
+                                    <li><a href="">Bleach Creams</a></li>
+                                    <li><a href="">Brightening Cream</a></li>
+                                    <li><a href="">Face Wash</a></li>
+                                    <li><a href="">Facial Wipes</a></li>
+                                    <li><a href="">Face Oil</a></li>
+                                    <li><a href="">Face Cleansers</a></li>
+                                    <li><a href="">Facial Kits</a></li>
+                                    <li><a href="">Face Tools</a></li>
+                                    <li><a href="">Moisturizer</a></li>
+                                    <li><a href="">Mask & Peels</a></li>
+                                    <li><a href="">Serum</a></li>
+                                    <li><a href="">Toner & Astringents</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="">EYE CARE</a>
+                                <ul>
+                                    <li><a href="">Dark Circles</a></li>
+                                    <li><a href="">Eye Contour Care</a></li>
+                                    <li><a href="">Eye Cream</a></li>
+                                    <li><a href="">Eye Masks</a></li>
+                                    <li><a href="">Eye Serums</a></li>
+                                    <li><a href="">Puffiness</a></li>
+                                    <li><a href="">Under Eye Creams</a></li>
+                                    <li><a href="">Under Eye Wrinkles</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hair">
+                        <div><img src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/hair-small.png"></div>
+                        <div class="flex">
+                            <p>Hair</p>
+                            <p>></p>
+                        </div>
+                        <div class="displaydata">
+                            <div>
+                                <a href="">HAIR CARE</a>
+                                <ul>
+                                    <li><a href="">Color Protection</a></li>
+                                    <li><a href="">Dandruff</a></li>
+                                    <li><a href="">Dry Shampoo</a></li>
+                                    <li><a href="">Gels & Waxes</a></li>
+                                    <li><a href="">Hair Spray</a></li>
+                                    <li><a href="">Hair Color/ Dye</a></li>
+                                    <li><a href="">Hair Creams & Masks</a></li>
+                                    <li><a href="">Hair Styling</a></li>
+                                    <li><a href="">Hairfall & Thinning</a></li>
+                                    <li><a href="">Straighteners</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="">HAIR LOSS</a>
+                                <ul>
+                                    <li><a href="">Conditioner</a></li>
+                                    <li><a href="">Hair Oil</a></li>
+                                    <li><a href="">Hair Serum</a></li>
+                                    <li><a href="">Hair Growth solutions</a></li>
+                                    <li><a href="">Shampoo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personalcare">
+                        <div><img src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/personal-care-small.png">
+                        </div>
+                        <div class="flex">
+                            <p>Personal Care</p>
+                            <p>></p>
+                        </div>
+                        <div class="displaydata">
+                            <div>
+                                <a href="">BATH & BODY</a>
+                                <ul>
+                                    <li><a href="">Body Cleansers</a></li>
+                                    <li><a href="">Body Massage Oil</a></li>
+                                    <li><a href="">Body Wash</a></li>
+                                    <li><a href="">Creams</a></li>
+                                    <li><a href="">Essential Oils</a></li>
+                                    <li><a href="">Foot Cream</a></li>
+                                    <li><a href="">Scrubs & Exfoliants</a></li>
+                                    <li><a href="">Ubtan & Face Packs</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="">BATH & SHOWER</a>
+                                <ul>
+                                    <li><a href="">Body Soaps</a></li>
+                                    <li><a href="">Shower Gel</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="">BATHING ACCESSORIES</a>
+                                <ul>
+                                    <li><a href="">Bath Brushes</a></li>
+                                    <li><a href="">Loofahs</a></li>
+                                    <li><a href="">Shower Caps</a></li>
+                                    <li><a href="">Sponges</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mombaby">
+                        <div><img src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/mom-baby-care-small.png">
+                        </div>
+                        <div class="flex">
+                            <p>Mom & Baby Care</p>
+                            <p>></p>
+                        </div>
+                        <div class="displaydata">
+                            <div>
+                                <a href="">BABY CARE</a>
+                                <ul>
+                                    <li><a href="">Bath time</a></li>
+                                    <li><a href="">Diapers</a></li>
+                                    <li><a href="">Lotions & Creams</a></li>
+                                    <li><a href="">Oils</a></li>
+                                    <li><a href="">Powder</a></li>
+                                    <li><a href="">Shampoo</a></li>
+                                    <li><a href="">Soaps</a></li>
+                                    <li><a href="">Sterilizer & Cleaners</a></li>
+                                    <li><a href="">Rash Cream</a></li>
+                                    <li><a href="">Wipes</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="">MOM CARE</a>
+                                <ul>
+                                    <li><a href="">Lotions & Creams</a></li>
+                                    <li><a href="">personal Care</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div><img src="https://www.beautybebo.com/pub/media/fragrance.png"></div>
+                        <div class="flex">
+                            <p>Fragances</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div><img src="https://www.beautybebo.com/pub/media/ayurveda.png"></div>
+                        <div class="flex">
+                            <p>Aryuveda</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-images">
+                <div id="slide">
+                    <img class="bottom" src="https://www.beautybebo.com/pub/media/ads/Vega_new_year_banner.jpg" />
+                    <img class="top" src="https://www.beautybebo.com/pub/media/ads/imgpsh_fullsize_anim_16_.jpg" />
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

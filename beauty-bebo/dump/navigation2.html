@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@100;300&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3075c3c5e4.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        #parent {
+            display: flex;
+            background-color: #dd0285;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            height: 50px;
+            justify-content: space-between;
+        }
+
+        .names {
+            width: 80%;
+            display: flex;
+            justify-content: space-evenly;
+
+
+        }
+
+        .names>div {
+            font-size: 14px;
+            color: white;
+            font-weight: bolder;
+            padding: 5px;
+            /* margin-top: 10px; */
+
+
+        }
+
+        .names>div>div {
+            margin-top: 10px;
+        }
+
+        .makeup>div:first-child,
+        .skin>div:first-child,
+        .hair>div:first-child,
+        .personalcare>div:first-child,
+        .mombaby>div:first-child,
+        .fragrance>div:first-child,
+        .ayurveda>div:first-child,
+        .brands>div:first-child {
+            display: flex;
+        }
+
+        .displaydata {
+            position: absolute;
+            width: 0px;
+            display: none;
+            z-index: 1;
+            background-color: white;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+
+
+        }
+
+        .displaydata>div {
+            width: auto;
+            padding-right: 20px;
+            line-height: 25px;
+            font-size: 12px;
+            font-weight: bolder;
+            padding-left: 20px;
+            padding-top: 20px;
+
+        }
+
+        li {
+            list-style: none;
+            margin-left: -40px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #666666
+        }
+
+        .names>div:hover {
+            background-color: #c60277;
+        }
+
+        .names>div:hover select {
+            background-color: #c60277;
+        }
+
+        .makeup:hover .displaydata,
+        .skin:hover .displaydata,
+        .hair:hover .displaydata,
+        .personalcare:hover .displaydata,
+        .mombaby:hover .displaydata,
+        .fragrance:hover .displaydata,
+        .ayurveda:hover .displaydata,
+        .brands:hover .displaydata {
+            display: flex;
+        }
+       
+       .brandgridBox
+       {
+           display: grid;
+           grid-template-columns:repeat(6, 100px) ;
+           grid-template-rows: repeat(6,50px);
+          
+       }
+     
+       /* .brandgridBox>div
+       {
+
+       } */
+r
+        ul {
+            width: 100px;
+        }
+
+        a:hover {
+            color: #c60277
+        }
+
+        .displaydata>div:hover .displaydata {
+            display: flex;
+        }
+
+        select {
+            border: 0px;
+            background-color: #dd0285;
+            height: 20px;
+            color: white;
+        }
+
+        .cart {
+            width: 15%;
+            background-color: #c60277;
+            margin-right: 25px;
+        }
+
+        .cart>div {
+            display: flex;
+            margin-left: 30px;
+            margin-top: 15px;
+            color: white;
+            font-size: 14px;
+            font-weight: bolder;
+        }
+
+        p {
+            margin-right: 10px;
+        }
+
+        .displaydata>div>a {
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div class="names">
+            <div class="makeup">
+                <div>
+                    <h4>MAKEUP</h4>
+                    <select name="smakeup" id="smakeup"></select>
+                </div>
+                <div class="displaydata">
+                    <div>
+                        <a href="">FACE</a>
+                        <ul>
+                            <li><a href="">BB Cream</a></li>
+                            <li><a href="">Blush</a></li>
+                            <li><a href="">Bronzer</a></li>
+                            <li><a href="">Contour</a></li>
+                            <li><a href="">Concealer</a></li>
+                            <li><a href="">Compact & Powder</a></li>
+                            <li><a href="">Face Primer</a></li>
+                            <li><a href="">Foundation</a></li>
+                            <li><a href="">Highlighters</a></li>
+                            <li><a href="">Loose Powder</a></li>
+                            <li><a href="">Makeup Kits</a></li>
+                            <li><a href="">Makeup Remover</a></li>
+                            <li><a href="">Setting Spray</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="">EYE</a>
+                        <ul>
+                            <li><a href="">Contact Lenses</a></li>
+                            <li><a href="">Eye Kit</a></li>
+                            <li><a href="">Eyeliner</a></li>
+                            <li><a href="">Eye Shadow</a></li>
+                            <li><a href="">Eye Primer</a></li>
+                            <li><a href="">Eye-Palettes</a></li>
+                            <li><a href="">Eye Makeup Remover</a></li>
+                            <li><a href="">Eye Brow Enhancers</a></li>
+                            <li><a href="">False Eyelashes</a></li>
+                            <li><a href="">Kajal</a></li>
+                            <li><a href="">Mascara</a></li>
+                            <li><a href="">Under Eye Concealer</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="">LIPS</a>
+                        <ul>
+                            <li><a href="">Lipstick</a></li>
+                            <li><a href="">Liquid Lipstick</a></li>
+                            <li><a href="">Lip Liner</a></li>
+                            <li><a href="">Lip Gloss</a></li>
+                            <li><a href="">Lip Balm</a></li>
+                            <li><a href="">Lip Crayon</a></li>
+                            <li><a href="">Lip Stain</a></li>
+                            <li><a href="">Lip Plumper</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="">NAILS</a>
+                        <ul>
+                            <li><a href="">Manicure & Pedicure Kits</a></li>
+                            <li><a href="">Nail Polish</a></li>
+                            <li><a href="">Nail Care</a></li>
+                            <li><a href="">Nail Polish Sets</a></li>
+                            <li><a href="">Nail Art Kits</a></li>
+                            <li><a href="">Nail Polish Remover</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="">TOOLS BRUSHES</a>
+                        <ul>
+                            <li><a href="">Blush Brush</a></li>
+                            <li><a href="">Eyelash Curlers</a></li>
+                            <li><a href="">Eye Brush</a></li>
+                            <li><a href="">Face Brush</a></li>
+                            <li><a href="">Lip Brush</a></li>
+                            <li><a href="">Makeup Pouches</a></li>
+                            <li><a href="">Mirrors</a></li>
+                            <li><a href="">Sponges & Applicators</a></li>
+                            <li><a href="">Sharpeners</a></li>
+                            <li><a href="">Tweezers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- skin----- -->
+            <div class="skin">
+                <div>
+
+                    <h4>SKIN</h4>
+                    <select name="smakeup" id="smakeup"></select>
+                </div>
+                <div class="displaydata">
+                    <div>
+                        <a href="">EYE CARE</a>
+                        <ul>
+                            <li><a href="">Dark Circles</a></li>
+                            <li><a href="">Eye Contour Care</a></li>
+                            <li><a href="">Eye Cream</a></li>
+                            <li><a href="">Eye Masks</a></li>
+                            <li><a href="">Eye Serums</a></li>
+                            <li><a href="">Puffiness</a></li>
+                            <li><a href="">Under Eye Creams</a></li>
+                            <li><a href="">Under Eye Wrinkles</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="">FACE CARE</a>
+                        <ul>
+                            <li><a href="">Contact Lenses</a></li>
+                            <li><a href="">Eye Kit</a></li>
+                            <li><a href="">Eyeliner</a></li>
+                            <li><a href="">Eye Shadow</a></li>
+                            <li><a href="">Eye Primer</a></li>
+                            <li><a href="">Eye-Palettes</a></li>
+                            <li><a href="">Eye Makeup Remover</a></li>
+                            <li><a href="">Eye Brow Enhancers</a></li>
+                            <li><a href="">False Eyelashes</a></li>
+                            <li><a href="">Kajal</a></li>
+                            <li><a href="">Mascara</a></li>
+                            <li><a href="">Under Eye Concealer</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="">LIPS</a>
+                        <ul>
+                            <li><a href="">Lipstick</a></li>
+                            <li><a href="">Liquid Lipstick</a></li>
+                            <li><a href="">Lip Liner</a></li>
+                            <li><a href="">Lip Gloss</a></li>
+                            <li><a href="">Lip Balm</a></li>
+                            <li><a href="">Lip Crayon</a></li>
+                            <li><a href="">Lip Stain</a></li>
+                            <li><a href="">Lip Plumper</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="https://www.beautybebo.com/pub/media/ads/imgpsh_fullsize_anim_8__1.jpg" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <!-- Hair -->
+            <div class="hair">
+                <div>
+                    <h4>HAIR</h4>
+                    <select name="smakeup" id="smakeup"></select>
+                </div>
+                <div class="displaydata">
+                    <div>
+                        <a href="">FACE</a>
+                        <ul>
+                            <li><a href="">Color Protection</a></li>
+                            <li><a href="">Dandruff</a></li>
+                            <li><a href="">Dry Shampoo</a></li>
+                            <li><a href="">Gels & Waxes</a></li>
+                            <li><a href="">Hair Spray</a></li>
+                            <li><a href="">Hair Color/ Dye</a></li>
+                            <li><a href="">Hair Creams & Masks </a></li>
+                            <li><a href="">Hair Styling</a></li>
+                            <li><a href="">Hairfall & Thinning </a></li>
+                            <li><a href="">Loose Powder</a></li>
+                            <li><a href="">Straighteners </a></li>
+
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="">Hair Loss</a>
+                        <ul>
+                            <li><a href="">Conditioner</a></li>
+                            <li><a href="">Hair Oil</a></li>
+                            <li><a href="">Hair Serum</a></li>
+                            <li><a href="">Hair Growth solutions</a></li>
+                            <li><a href="">Shampoo</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="https://www.beautybebo.com/pub/media/ads/imgpsh_fullsize_anim_9_.jpg" alt="">
+
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- personalCare -->
+            <div class="personalcare">
+                <div>
+                    <h4>PERSONAL CARE</h4>
+                    <select name="smakeup" id="smakeup"></select>
+                </div>
+                <div class="displaydata">
+                    <div>
+                        <a href="">Bath & Body</a>
+                        <ul>
+                            <li><a href="">Body Cleansers</a></li>
+                            <li><a href="">Body Massage Oil</a></li>
+                            <li><a href="">Body Wash</a></li>
+                            <li><a href="">Creams</a></li>
+                            <li><a href="">Essential Oils</a></li>
+                            <li><a href="">Foot Cream</a></li>
+                            <li><a href="">Scrubs & Exfoliants</a></li>
+                            <li><a href="">Ubtan & Face Packs</a></li>
+
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="">Bathing Accessories</a>
+                        <ul>
+                            <li><a href="">Bath Brushes</a></li>
+                            <li><a href="">Loofahs</a></li>
+                            <li><a href="">Shower Caps</a></li>
+                            <li><a href="">Sponges</a></li>
+
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="">Bath & Shower</a>
+                        <ul>
+                            <li><a href="">Body Soaps</a></li>
+                            <li><a href="">Shower Gel</a></li>
+
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="https://www.beautybebo.com/pub/media/ads/imgpsh_fullsize_anim_10_.jpg" alt="">
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- momBabyCARE -->
+            <div class="mombaby">
+                <div>
+                    <h4>MOM & BABY CARE</h4>
+                    <select name="smakeup" id="smakeup"></select>
+                </div>
+                <div class="displaydata">
+                    <div>
+                        <a href="">Baby Care</a>
+                        <ul>
+                            <li><a href="">Bath time</a></li>
+                            <li><a href="">Diapers</a></li>
+                            <li><a href="">Lotions & Creams</a></li>
+                            <li><a href="">Oils</a></li>
+                            <li><a href="">Powder</a></li>
+                            <li><a href="">Shampoo</a></li>
+                            <li><a href="">Soaps</a></li>
+                            <li><a href="">Sterilizer & Cleaners</a></li>
+                            <li><a href="">Rash Cream</a></li>
+                            <li><a href="">Wipes</a></li>
+
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="">Mom Care</a>
+                        <ul>
+                            <li><a href="">Lotions & Creams</a></li>
+                            <li><a href="">personal Care</a></li>
+
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="https://www.beautybebo.com/pub/media/mega-menu/imgpsh_fullsize_anim_11_.jpg" alt="">
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- fragranace -->
+            <div class="fragrance">
+                <div>
+                    <h4>FRAGRANCE</h4>
+                    <select name="smakeup" id="smakeup"></select>
+                </div>
+                <div class="displaydata">
+                    <div>
+                        <a href=""></a>
+                        <ul>
+                            <li><a href="">Perfumes</a></li>
+                            <li><a href="">Deodorants roll ons</a></li>
+                            <li><a href="">Body Mist/Spray</a></li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- Ayurveda -->
+            <div class="ayurveda">
+                <div>
+                    <h4>AYURVEDA</h4>
+                    <select name="smakeup" id="smakeup"></select>
+                </div>
+                <div class="displaydata">
+                    <div>
+                        <a href="">Natural Skin Care</a>
+                        <ul>
+                            <li><a href="">Body Wash</a></li>
+                            <li><a href="">Body Lotion</a></li>
+                            <li><a href="">Cleansers</a></li>
+                            <li><a href="">Cream</a></li>
+                            <li><a href="">Eye Care</a></li>
+                            <li><a href="">Face Wash</a></li>
+                            <li><a href="">Gel</a></li>
+                            <li><a href="">Lip Care</a></li>
+                            <li><a href="">Mask</a></li>
+                            <li><a href="">Pack/a></li>
+                            <li><a href="">Scrub</a></li>
+                            <li><a href="">Sun Protection</a></li>
+
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="">Natural Hair Care</a>
+                        <ul>
+                            <li><a href="">Conditioner</a></li>
+                            <li><a href="">Hair Oils</a></li>
+                            <li><a href="">Hair Serum</a></li>
+                            <li><a href="">Hair Gel</a></li>
+                            <li><a href="">Shampoo</a></li>
+
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="https://www.beautybebo.com/pub/media/mega-menu/imgpsh_fullsize_anim_12_.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <!-- Brand -->
+            
+            <div class="brands">
+                <div>
+                    <h4>BRANDS</h4>
+                    <select name="smakeup" id="smakeup"></select>
+                </div>
+                <div class="displaydata" class="brandgridBox">
+                    <div class="brandBoxwidth"> 
+                       <ul>
+                       <li> <a href="">Lakme</a></li>
+                       </ul>  
+                        
+                     </div>
+                    <div class="brandBoxwidth">
+                        <ul>
+                            <li> <a href="">L-orial-Paris</a></li>
+                        </ul > 
+                     
+                     </div>
+                    <div class="brandBoxwidth">
+                        <ul>
+                            <li> <a href="">JOY</a></li>
+                        </ul> 
+                    </div>
+                    <div class="brandBoxwidth">
+                       
+                        <ul>
+                            <li> <a href="">Aroma</a></li>
+                        </ul> 
+                    </div>
+                       
+                    <div class="brandBoxwidth">
+                        <ul>
+                            <li> <a href="">MAGIC</a></li>
+                        </ul> 
+                        
+                    </div> 
+                    <div class="brandBoxwidth">
+                        <ul>
+                            <li> <a href="">LOTUS </a></li>
+                        </ul> 
+                        
+                    </div>
+                    <div class="brandBoxwidth">
+                        <ul>
+                            <li> <a href=""> HERBALS</a></li>
+                        </ul> 
+                        
+                    </div>
+                    <div class="brandBoxwidth">
+                        <ul>
+                            <li> <a href="">VLCC</a></li>
+                        </ul> 
+                        
+                    </div> 
+                    <div class="brandBoxwidth">
+                        <ul>
+                            <li> <a href="">VEGA</a></li>
+                        </ul> 
+                        
+                    </div>
+                   
+                    <div class="brandBoxwidth">
+                        <ul>
+                            <li> <a href=""> MAYBELLINE </a></li>
+                        </ul> 
+                        
+                    </div>
+                    <div class="brandBoxwidth">
+                        <ul>
+                            <li> <a href="">MAMAEARTH </a></li>
+                        </ul> 
+                        
+                    </div>
+                    <div class="brandBoxwidth">
+                        <ul>
+                            <li> <a href=""> CHICCO</a></li>
+                        </ul> 
+                        
+                    </div>
+                    <div class="brandBoxwidth">
+                        <ul>
+                            <li> <a href="">NEUTROGENA</a></li>
+                        </ul> 
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="cart">
+                <div>
+                    <p><i class="fa-solid fa-bag-shopping"></i></p>
+                    <p>MY CART</p>
+                    <p>-</p>
+                    <p>0.00</p>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
